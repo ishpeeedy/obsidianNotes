@@ -1333,7 +1333,7 @@ In a sparse index, index records are created only for some of the records.
 
 Sparse indexes require less maintenance than dense indexes at write-time since they only contain a subset of the values. This lighter maintenance burden means that inserts, updates, and deletes will be faster. Having fewer entries also means that the index will use less memory. Finding data is slower since a scan across the page typically follows the binary search. Sparse indexes are also optional when working with ordered data.
 
-# Normalization and Denormalization
+# Normalization-and-Denormalization
 
 ## Terms
 
