@@ -85,7 +85,7 @@ _This course is also available on my [website](https://karanpratapsingh.com/cour
   - [Next Steps](#next-steps)
   - [References](#references)
 
-# What is system design?
+# What-is-system-design?
 
 Before we start this course, let's talk about what even is system design.
 
