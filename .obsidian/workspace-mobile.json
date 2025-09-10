@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "systemDesign/systemDesign.md",
+                "file": "backend/why your backend shouldn't serve files.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "systemDesign"
+              "title": "why your backend shouldn't serve files"
             }
           }
         ]
@@ -155,8 +155,12 @@
   },
   "active": "3769f90d707a3a64",
   "lastOpenFiles": [
-    "README.md",
     "systemDesign/systemDesign.md",
+    "backend/why your backend shouldn't serve files.md",
+    "/backend/why your backend shouldn't serve files.md",
+    "backend",
+    "/backend",
+    "README.md",
     "systemDesign/diagrams/whatsapp.excalidraw",
     "systemDesign/diagrams/virtualization-containerization.excalidraw",
     "systemDesign/diagrams/url-shortener.excalidraw",
@@ -165,8 +169,6 @@
     "systemDesign/diagrams/transactions.excalidraw",
     "systemDesign/diagrams/tcp-udp.excalidraw",
     "systemDesign/diagrams/sso.excalidraw",
-    "systemDesign/diagrams/sharding.excalidraw",
-    "systemDesign/diagrams/service-discovery.excalidraw",
     "/systemDesign/systemDesign.md",
     "/README.md",
     "Welcome.md"
