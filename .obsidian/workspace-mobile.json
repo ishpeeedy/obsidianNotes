@@ -155,6 +155,10 @@
   },
   "active": "3769f90d707a3a64",
   "lastOpenFiles": [
+    "frontend/react notes.md",
+    "/frontend/react notes.md",
+    "frontend",
+    "/frontend",
     "systemDesign/systemDesign.md",
     "backend/why your backend shouldn't serve files.md",
     "/backend/why your backend shouldn't serve files.md",
@@ -167,8 +171,6 @@
     "systemDesign/diagrams/uber.excalidraw",
     "systemDesign/diagrams/twitter.excalidraw",
     "systemDesign/diagrams/transactions.excalidraw",
-    "systemDesign/diagrams/tcp-udp.excalidraw",
-    "systemDesign/diagrams/sso.excalidraw",
     "/systemDesign/systemDesign.md",
     "/README.md",
     "Welcome.md"
