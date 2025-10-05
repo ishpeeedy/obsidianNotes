@@ -1,0 +1,86 @@
+# Problem Statement
+Given an array `nums`, return `true` if the array was originally sorted in non-decreasing order, then rotated some number of positions (including zero). Otherwise, return `false`.
+There may be duplicates in the original array.
+Note: An array `A` rotated by `x` positions results in an array `B` of the same length such that `B[i] == A[(i+x) % A.length]` for every valid index `i`.
+#array #DSA #DSA-easy 
+# Key Concepts
+- **Rotation**: Shifting elements of an array circularly.
+- **Non-Decreasing Order**: Ensuring that elements are sorted in ascending order, allowing duplicates.
+- **Edge Cases**: Handling arrays with all identical elements, arrays with no rotation, and arrays with only one element.
+# Implementation Steps
+1. **Count Descending Pairs**: Traverse the array and count the number of times an element is greater than the next element.
+2. **Check Rotation**: If the count of descending pairs is more than 1, the array is not sorted and rotated.
+3. **Return Result**: Return `true` if the count is 0 or 1, otherwise return `false`.
+# Code Implementation
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+bool checkSortedAndRotated(vector<int>& nums) {
+    int n = nums.size();
+    int count = 0;
+    for (int i = 0; i < n; i++) {
+        if (nums[i] > nums[(i + 1) % n]) {
+            count++;
+        }
+        if (count > 1) {
+            return false;
+        }
+    }
+    return true;
+}
+int main() {
+    vector<int> nums1 = {3, 4, 5, 1, 2};
+    cout << (checkSortedAndRotated(nums1) ? "true" : "false") << endl;
+    vector<int> nums2 = {2, 1, 3, 4};
+    cout << (checkSortedAndRotated(nums2) ? "true" : "false") << endl;
+    vector<int> nums3 = {1, 2, 3};
+    cout << (checkSortedAndRotated(nums3) ? "true" : "false") << endl;
+    return 0;
+}
+```
+# Sample Input/Output
+### Input
+```plaintext
+nums = [3,4,5,1,2]
+```
+### Output
+```plaintext
+true
+```
+### Explanation
+[1,2,3,4,5] is the original sorted array. You can rotate the array by `x = 2` positions to begin on the element of value `3`: [3,4,5,1,2].
+### Input
+```plaintext
+nums = [2,1,3,4]
+```
+### Output
+```plaintext
+false
+```
+### Explanation
+There is no sorted array once rotated that can make `nums`.
+### Input
+```plaintext
+nums = [1,2,3]
+```
+### Output
+```plaintext
+true
+```
+### Explanation
+[1,2,3] is the original sorted array. You can rotate the array by `x = 0` positions (i.e., no rotation) to make `nums`.
+# Dry Run
+### Input: nums = [3,4,5,1,2]
+1. Initialize `count = 0`.
+2. Traverse the array:
+   - `nums[0] = 3`, `nums[1] = 4`: No change.
+   - `nums[1] = 4`, `nums[2] = 5`: No change.
+   - `nums[2] = 5`, `nums[3] = 1`: Increment `count = 1`.
+   - `nums[3] = 1`, `nums[4] = 2`: No change.
+   - `nums[4] = 2`, `nums[0] = 3`: No change.
+3. Return `true` since `count = 1`.
+# Notes
+- **Efficiency**: The algorithm runs in O(n) time, making it optimal for this problem.
+- **Edge Cases**: Ensure proper handling of arrays with all identical elements, arrays with no rotation, and arrays with only one element.
+- **Extensions**: Modify the program to handle arrays with negative numbers or floating-point values.
