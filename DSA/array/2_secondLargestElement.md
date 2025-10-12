@@ -1,6 +1,6 @@
 # Problem Statement
 Given an array of integers `nums`, return the second-largest element in the array. If the second-largest element does not exist, return `-1`.
-#array #DSA #DSA-easy
+#Array #DSA #DSA-easy
 # Key Concepts
 - **Array Traversal**: Iterating through the array to examine each element.
 - **Sorting or Comparison Logic**: Identifying the largest and second-largest values efficiently.

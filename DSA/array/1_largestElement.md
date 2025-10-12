@@ -1,6 +1,6 @@
 # Problem Statement
 Given an array of integers, find and return the largest element in the array.
-#array #DSA #DSA-easy 
+#Array #DSA #DSA-easy 
 # Key Concepts
 - **Array Traversal**: Iterating through the array to examine each element.
 - **Comparison Logic**: Comparing elements to determine the largest value.
